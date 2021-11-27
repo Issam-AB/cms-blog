@@ -23,7 +23,7 @@ const Header = () => {
 					<Link href="/">
 						{/* <Image src="/vercel.svg" /> */}
 						<span className="font-semibold text-4xl text-white tracking-tight cursor-pointer">
-							Blog
+							Blog CSM
 						</span>
 					</Link>
 				</div>

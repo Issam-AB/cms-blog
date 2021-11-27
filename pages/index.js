@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Categories, PostWidget, PostCard } from "../components";
-import { getPost } from "../services";
+import { getPosts } from "../services";
 
 // const posts = [
 // 	{
@@ -40,7 +40,7 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-	const posts = (await getPost()) || [];
+	const posts = (await getPosts()) || [];
 
 	return {
 		props: { posts },
